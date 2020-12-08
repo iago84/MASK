@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+
+                        <div class="art-layout-cell art-content"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell post-layout-item-0" style="width: 100%">
+
+
+
+        <article class="art-post art-article">
+                       {% for b in blogentry %}                 <h2 class="art-postheader">{{ b.titulo }}
+                                        </h2>
+                                                        <div class="art-postmetadataheader">
+                                                <div class="art-postheadericons art-metadata-icons">
+                                <span class="art-postdateicon">{{ b.date }}</span>
+                                                    </div>
+                                            </div>
+                                        <div class="art-postcontent art-postcontent-0 clearfix">
+
+                                         <pre>{{ b.cuerpo_noticia|safe }}</pre>
+                                        <br>
+
+                                          {% if b.imagen %}
+              <img src="{{ b.imagen.url }}" width="400px" height="400px" ><br>
+                                            {%endif%}
+                                            {% if b.linkV %}
+                                  {{ b.linkV }}<br>
+                                  {% endif%}
+
+
+               </div>
+         {% endfor %}
+<br><br><br>
+        {% block ads%}
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-6" style="width: 100%" >
+        <h3>Publicidad</h3>
+        <br>
+        <center>
+<iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=12&l=ur1&category=libros&banner=19FFR57F89M437418E82&f=ifr&linkID=251a7bd0cc83365c7489df2dabcf6a5b&t=akash111109-21&tracking_id=akash111109-21" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+</center>
+    </div>
+    </div>
+</div>
+</div>
+{% endblock%}
+    </div></div></div>
+
+        </article>
+
+
+ </div>
+                </div>
+                        </div>
+{% endblock %}

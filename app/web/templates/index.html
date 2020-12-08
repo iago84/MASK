@@ -1,0 +1,319 @@
+{% block head %}
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Mask du Morte</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+<link rel="stylesheet" href="{% static 'style.responsive.css' %}">
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="{% static 'style.css'%}" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="{% static 'style.ie7.css'%}" media="screen" />-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Didact+Gothic|Khmer&amp;subset=latin">
+<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <script src="{% static 'jquery.js'%}"></script>
+    <script src="{% static 'script.js'%}"></script>
+    <script src="{% static 'script.responsive.js'%}"></script>
+
+<style>.art-content .art-postcontent-0 .layout-item-0 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-width:0px;border-top-color:#D9D9D9;border-right-color:#D9D9D9;border-bottom-color:#D9D9D9;border-left-color:#D9D9D9;  border-collapse: separate; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px; border-radius: 10px;  }
+.art-content .art-postcontent-0 .layout-item-2 { margin-top: 14px;  }
+.art-content .art-postcontent-0 .layout-item-3 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-width:0px;border-top-color:#D9D9D9;border-right-color:#D9D9D9;border-bottom-color:#D9D9D9;border-left-color:#D9D9D9;  border-collapse: separate; border-radius: 15px;  }
+.art-content .art-postcontent-0 .layout-item-4 { padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px; border-top-left-radius: 15px;border-bottom-left-radius: 15px;  }
+.art-content .art-postcontent-0 .layout-item-5 { padding-top: 5px;padding-right: 5px;padding-bottom: 5px;padding-left: 5px; border-top-right-radius: 15px;border-bottom-right-radius: 15px;  }
+.art-content .art-postcontent-0 .layout-item-6 { padding-right: 5px;padding-left: 5px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.target {  }
+#mostrar{display: none}
+</style>
+
+<meta name="description" content="Mask du Morte,artes literarias">
+<meta name="keywords" content="Mask du morte, mask,libros,books,poemas">
+     
+
+</head>
+
+{% endblock %}
+<body>
+<div id="art-main">
+<header class="art-header">
+
+    <div class="art-shapes">
+
+            </div>
+
+
+<h1 class="art-headline" style="margin-top: 80px">Mask du Morte</h1>
+
+
+
+
+
+</header>
+<div class="art-sheet clearfix">
+
+    {% block nav1 %}
+<nav class="art-nav">
+    <ul class="art-hmenu">
+        <li><a href="{% url 'Index' %}">Home</a></li>
+        <li><a href="{% url 'Blog' %}">Blog</a></li>
+        <li><a href="{% url 'Libros' %}">Libros</a></li>
+        <li><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form></li>
+		
+
+    </ul>
+<div id="google_translate_element" style="z-index: 99"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es', gaTrack: true, gaId: 'UA-129122061-1'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </nav>
+    {% endblock %}
+
+    <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+
+        {% block menulat %}
+
+                        <div class="art-layout-cell art-sidebar1">
+
+
+
+<div class="art-block clearfix">
+        <h3>LINKS</h3><br>
+        <div class="art-blockcontent"><ul>
+            <li><a href="http://lakaletaestudio.com" target="_blank">lakaletaestudio.com</a><span style="line-height: normal;"></span><br></li>
+            <li><a href="http://bbbgang.com" target="_blank">bbbgang.com</a><span style="line-height: normal;"></span></li>
+            <li><a href="http://jokersoftware.info" target="_blank">jokersoftware.info</a><span style="line-height: normal;"></span></li>
+            <li><a href="http://ikkisports.com" target="_blank">ikkisports.com</a><span style="line-height: normal;"></span></li>
+            <li><a href="http://playdagame.com" target="_blank">playdagame.com</a><span style="line-height: normal;"></span><br></li>
+        </ul></div>
+</div>
+
+<div class="art-block clearfix">
+      <h3>LIBRO DE VISITAS</h3><br>
+        <div class="art-blockcontent"><ul>
+           
+
+
+<p><a href="{% url 'Visita' %}">Dejar comentario</a> </p>
+        <hr>
+    {% for v in visitas %}
+            <p><strong>{{ v.nombre }}</strong> <br> {{ v.comentario }}</p><br>
+        {% endfor %}
+
+
+        </ul></div>
+</div>
+
+
+</div>
+
+                        {% endblock %}
+
+                        {% block content %}
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+
+
+                                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout layout-item-0">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <h1>Bienvenidos</h1><p style="text-align: justify;">Esta es mi humilde morada en la red.</p>
+        <p style="text-align: justify;">Aquí publico mis escritos, y mis delirios llevados al papel. De la imaginación mas desbordada y desde la más profunda desolación.</p><p style="text-align: justify;">MaskduMorte.com quiere llevar a todos su vision poetica de la vida, del amor, de la soledad del humano.&nbsp;</p><p style="text-align: justify;">Recogemos lo que sembramos. Y desde mi más sincero pesar por los lectores; he sembrado letras, palabras oscuras, proféticas, desesperadas, y támbien bellas.</p>
+
+        <p>DONATE <a href="http://www.paypal.me/iagootero"target="_blank" >HERE</a><br></p>
+
+    </div><div class="art-layout-cell layout-item-1" style="width: 50%" >
+        <div class="image-caption-wrapper" style="text-align: center;">
+            <div class="image-caption-wrapper" style="text-align: center; padding-top: 7px; padding-right: 7px; padding-bottom: 7px; padding-left: 7px;">
+                <h3>Sobre el Autor</h3>
+                <p><br></p>
+                <p style="text-align: center;"><img width="200" height="150" style="margin-top: 7px; margin-right: 7px; margin-bottom: 7px; margin-left: 7px;" alt="" class="art-lightbox" src="{% static 'images/IMG-20170929-WA0005.jpg'%}"><br></p><br>
+                <p style="text-align: center;">Fecha Nacimiento: Sep,1984</p>
+                <p style="text-align: center;"><br></p>
+                <p style="text-align: center;">Origen: Híspanico</p>
+                <p style="text-align: center;"><br></p>
+                <p style="text-align: center;">Mas info personal:</p>
+                <p style="text-align: center;">Para que hablar mierda de mi??</p></div></div><p>
+        </p>
+    </div>
+    </div>
+</div>
+
+                                    <!-- RETOCADO -->
+                                    <div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-6" style="width: 100%" >
+        <h3>Noticias</h3><span>
+        <h4>Necesito fondos</h4>
+        <p>Hola a todos, me gustaria publicar un libro, en conjunción de la EDITORIAL CIRCULO ROJO, libro titulado: <strong>"LOS HAIKU DE AROA"</strong></p>
+        <p>Para ello, me dispongo a hacer un crowfunding. Solo teneis que reclamar vuestro ejemplar en el siguiente enlace:</p>
+
+
+        <span>
+    <a href="https://www.verkami.com/locale/es/projects/22614-publicacion-de-un-libro-de-haikus" target="_blank">Enlace a crowfunding Verkami</a>
+        </span>
+
+        <br></span>
+        <span>
+        <h4>Colabora comprando <strong>"DEATH TO BREATH"</strong></h4>
+            <p>Un perfume embriagador, para esa chica o esa mujer seducida por poemas igual de intensos que este perfume</p>
+        <p>Muy pronto a la venta exclusivamente en <strong>MASK DU MORTE</strong></p>
+
+
+        <span>
+
+ <!--         
+   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<fieldset>
+		<input type="hidden" name="cmd" value="_cart" />
+		<input type="hidden" name="add" value="1" />
+		<input type="hidden" name="business" value="labs-feedback-minicart@paypal.com" />
+		<input type="hidden" name="item_name" value="PDTB" />
+		<input type="hidden" name="quantity" value="1" />
+		<input type="hidden" name="amount" value="10.00" />
+		<input type="hidden" name="currency_code" value="EUR" />
+		<input type="submit" name="submit" value="Add to cart" />
+	</fieldset>
+</form>
+ --> 
+
+        </span>
+
+        <br></span>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="art-content-layout-wrapper layout-item-2">
+<div class="art-content-layout layout-item-3">
+    <div class="art-content-layout-row">
+   <div class="art-layout-cell layout-item-5" style="width: 100%" >
+        <h3>Qué encontraras en esta web</h3>
+       
+        <ul>
+            <li><h4>Poemas</h4><br>
+                    {% for p in poesia %}
+                <ul class="target">
+                    <li><a href="{{p.get_absolute_url}}">{{p.titulo}}</a>
+
+                        {% if p.url %}
+                   - <a href="{{ p.url }}" target="_blank">En Amazon</a>
+          {% endif %}
+
+
+          {% if p.text %}
+                   - <a href="{{p.leer}}">Lectura en la web</a>
+          {% endif %}</li>
+
+
+                </ul>
+                {%endfor%}
+
+
+            </li><br>
+            <li><h4>Relatos cortos</h4><br>
+             {% for r in rel %}
+                    <ul class="target">
+                        <li><a href="{{r.get_absolute_url}}">{{r.titulo}}  </a>{% if r.url %}
+ - <a href="{{ r.url }}"target="_blank">En Amazon</a>
+          {% endif %}
+          {% if r.text %}
+                  -  <a href="{{r.leer}}">Lectura en la web</a>
+          {% endif %}</li>
+                        
+                    </ul>
+                    {%endfor%}
+            </li>
+
+        </ul>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-6" style="width: 100%" >
+        
+
+    </div>
+    </div>
+</div>
+{% block ads%}
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-6" style="width: 100%" >
+        <h3>Publicidad</h3>
+        <br>
+        <center>
+<iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=12&l=ur1&category=libros&banner=19FFR57F89M437418E82&f=ifr&linkID=251a7bd0cc83365c7489df2dabcf6a5b&t=akash111109-21&tracking_id=akash111109-21" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+</center>
+    </div>
+    </div>
+</div>
+</div>
+{% endblock%}
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+
+    {% endblock %}
+    {% block footer %}
+
+    <footer class="art-footer">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%">
+        <p><img width="212" height="292" alt="" class="art-lightbox" src="{% static 'images/JOKPIE.png' %}"><br></p>
+        <p>Copyright © 2017. All Rights Reserved.</p>
+    </div>
+    </div>
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%"><br><br>
+
+    <a href="{% url 'aviso' %}">Aviso Legal</a>&nbsp;--
+    <a href="{% url 'privacidad' %}">Política de privacidad</a>&nbsp;--
+    <a href="{% url 'cookies' %}">Política de cookies</a>&nbsp;--
+    <a href="{% url 'terminos' %}">Términos y condiciones</a>
+
+
+     </div>
+    </div>
+</div>
+<script src="{% static 'minicart.js' %}"></script>
+<script>
+    paypal.minicart.render({
+      parent: document.getElementById("shopping-cart")
+    });
+    paypal.minicart.view.show();
+    paypal.minicart.cart.on('remove', function() {
+      paypal.minicart.view.show();
+    });
+    </script>
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>{% endblock %}
